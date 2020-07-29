@@ -5,9 +5,9 @@
 #include <cstring>
 #include <iostream>
 
+extern char tty_device[30];
 
-Serialcom::Serialcom(char *dev) {
-    strcpy(tty_device,dev);
+Serialcom::Serialcom() {
     
     tty_fd=open(tty_device, O_WRONLY );
 
@@ -75,3 +75,4 @@ Serialcom::~Serialcom() {
     //close connection with serial device
     close(tty_fd);
 }
+

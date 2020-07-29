@@ -6,6 +6,7 @@
 #include <gtkmm/radiobutton.h>
 #include <gtkmm/box.h>
 #include <gtkmm/separator.h>
+#include "serial_communicator.h"
 
 class Gui : public Gtk::Window {
 	protected:
@@ -17,8 +18,10 @@ class Gui : public Gtk::Window {
                 
                 /* signal handlers */
 		void on_button_clicked();
+
 	public:
 		Gui();
+                /* Serialcom &device; //pass it to colorpicker class */
 		virtual ~Gui();
 
 };

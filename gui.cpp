@@ -1,6 +1,5 @@
 #include "gui.h"
 #include <iostream>
-#include "serial_communicator.h"
 #include <gtkmm/colorchooser.h>
 #include "colorpicker.h"
 

@@ -17,6 +17,7 @@ class Colorpick : public Gtk::Window {
         void on_button_clicked();
     public:
         Colorpick();
+        /* Serialcom &device; */
         virtual ~Colorpick();
 };
 
