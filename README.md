@@ -9,5 +9,4 @@
 1. Upload code (./arduino/arduino.ino) to Arduino via Arduino IDE
 1. 
 `make`
-1.
 `make install`
