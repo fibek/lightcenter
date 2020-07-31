@@ -2,7 +2,8 @@ EXEC := lightcenter
 
 PKG := `pkg-config gtkmm-3.0 --cflags --libs`
 RM := rm 
-LINK := ln -s -r
+CP := cp
+
 
 CC := g++
 
@@ -26,4 +27,4 @@ clean:
 	@$(RM) $(EXEC)
 
 install: 
-	@$(LINK) $(EXEC) $(INSDIR)
+	@$(CP) $(EXEC) $(INSDIR)
